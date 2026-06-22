@@ -1,7 +1,5 @@
-import readlineSync from "readline-sync";
-
-const radius: number = parseFloat(readlineSync.question("Enter the radius of the circle: "));
-const angle: number = parseFloat(readlineSync.question("Enter the angle in degrees (for sector area): "));
+const radius: number = 5.0;
+const angle: number = 60.0;
 const pi: number = Math.PI;
 
 const diameter: number = 2 * radius;
@@ -14,3 +12,5 @@ console.log(`Diameter: ${diameter}`);
 console.log(`Circumference: ${circumference}`);
 console.log(`Sector Area for ${angle} degrees: ${sectorArea}`);
 console.log(`Arc Length for ${angle} degrees: ${arcLength}`);
+
+export {};

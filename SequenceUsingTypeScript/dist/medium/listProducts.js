@@ -1,10 +1,6 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const readline_sync_1 = __importDefault(require("readline-sync"));
-const input = readline_sync_1.default.question("Enter a list of product names separated by commas: ");
+const input = "Pen,Pencil,Eraser,Notebook";
 const products = input.split(",");
 console.log("List of Products:");
 for (const product of products) {

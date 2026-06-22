@@ -1,11 +1,7 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const readline_sync_1 = __importDefault(require("readline-sync"));
-const radius = parseFloat(readline_sync_1.default.question("Enter the radius of the circle: "));
-const angle = parseFloat(readline_sync_1.default.question("Enter the angle in degrees (for sector area): "));
+const radius = 5.0;
+const angle = 60.0;
 const pi = Math.PI;
 const diameter = 2 * radius;
 const circumference = 2 * pi * radius;

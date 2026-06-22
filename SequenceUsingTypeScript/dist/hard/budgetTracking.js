@@ -1,11 +1,6 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const readline_sync_1 = __importDefault(require("readline-sync"));
-const income = parseFloat(readline_sync_1.default.question("Enter your monthly income: "));
-const expensesInput = readline_sync_1.default.question("Enter your expenses (space-separated): ");
+const income = 3500.00;
+const expensesInput = "30.00 40.50 25.75";
 const expenseStrings = expensesInput.split(" ");
 let totalExpenses = 0;
 for (const expenseStr of expenseStrings) {

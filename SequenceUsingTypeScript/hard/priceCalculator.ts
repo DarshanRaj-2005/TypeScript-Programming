@@ -1,18 +1,10 @@
-import readlineSync from "readline-sync";
-
 let totalPrice: number = 0;
+const itemCount: number = 2;
+const prices: number[] = [10, 15];
+const quantities: number[] = [3, 2];
 
-function addItem(): void {
-  const price: number = parseInt(readlineSync.question("Enter the price of the item: "));
-  const quantity: number = parseInt(readlineSync.question("Enter the quantity: "));
-  totalPrice = totalPrice + (price * quantity);
-
-  const answer: string = readlineSync.question("Do you want to enter another item? (yes/no): ");
-  if (answer.toLowerCase() === "yes") {
-    addItem();
-  } else {
-    console.log(`Total Price: ${totalPrice}`);
-  }
+for (let i: number = 0; i < itemCount; i++) {
+  totalPrice = totalPrice + (prices[i] * quantities[i]);
 }
 
-addItem();
+console.log(`Total Price: ${totalPrice}`);

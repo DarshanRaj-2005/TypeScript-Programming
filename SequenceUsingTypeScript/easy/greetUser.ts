@@ -1,5 +1,5 @@
-import readlineSync from "readline-sync";
-
-const name: string = readlineSync.question("Enter your name: ");
+const name: string = "darshan";
 
 console.log(`Hello, ${name}!`);
+
+export {};

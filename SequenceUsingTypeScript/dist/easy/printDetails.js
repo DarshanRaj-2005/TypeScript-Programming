@@ -1,6 +1,6 @@
 "use strict";
-const userName = "John Doe";
-const userAge = 25;
+const userName = "darshan";
+const userAge = 22;
 const userFavoriteColor = "Blue";
 console.log(userName);
 console.log(userAge);

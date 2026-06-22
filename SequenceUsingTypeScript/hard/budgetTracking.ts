@@ -1,7 +1,5 @@
-import readlineSync from "readline-sync";
-
-const income: number = parseFloat(readlineSync.question("Enter your monthly income: "));
-const expensesInput: string = readlineSync.question("Enter your expenses (space-separated): ");
+const income: number = 3500.00;
+const expensesInput: string = "30.00 40.50 25.75";
 const expenseStrings: string[] = expensesInput.split(" ");
 let totalExpenses: number = 0;
 
